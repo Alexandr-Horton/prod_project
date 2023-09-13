@@ -15,6 +15,7 @@ export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
 
+    // Асинхронные редюсеры
     loginForm?: LoginSchema;
     profile?: ProfileSchema;
 }
@@ -40,4 +41,5 @@ export interface ThunkExtraArg {
 export interface ThunkConfig<T> {
     rejectValue: T;
     extra: ThunkExtraArg;
+    state: StateSchema;
 }
