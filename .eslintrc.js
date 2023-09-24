@@ -24,6 +24,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'ulbi-tv-plugin',
         'unused-imports',
     ],
     rules: {
@@ -61,6 +62,9 @@ module.exports = {
                     'direction',
                     'gap',
                     'feature',
+                    'color',
+                    'variant',
+                    'size',
                 ],
             },
         ],
