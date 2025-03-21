@@ -4,28 +4,21 @@
     padding: 6px 16px;
     display: flex;
     align-items: center;
-
-    &:hover {
-        color: var(--accent-redesigned);
-
-        .addonLeft svg, .addonRight svg {
-            color: var(--accent-redesigned);
-        }
-    }
 }
 
 .withAddon {
     padding: 0 16px;
 }
 
-.addonLeft, .addonRight {
+.addonLeft,
+.addonRight {
     display: flex;
 }
 
-.addonRight svg, .addonLeft svg {
+.addonLeft svg,
+.addonRight svg {
     color: var(--hint-redesigned);
 }
-
 
 .clear {
     padding: 0;
@@ -44,22 +37,34 @@
 .outline {
     background: none;
     border-radius: 34px;
+}
 
-    &:hover {
-        border: 2px solid var(--accent-redesigned);
+.Button:hover {
+    color: var(--accent-redesigned);
+
+    .addonLeft svg {
+        color: var(--accent-redesigned);
     }
 
-    &.normal {
-        border: 2px solid var(--icon-redesigned);
+    .addonRight svg {
+        color: var(--accent-redesigned);
     }
+}
 
-    &.error {
-        border: 2px solid var(--cancel-redesigned);
-    }
+.outline:hover {
+    border: 2px solid var(--accent-redesigned);
+}
 
-    &.success {
-        border: 2px solid var(--save-redesigned);
-    }
+.outline.normal {
+    border: 2px solid var(--icon-redesigned);
+}
+
+.outline.error {
+    border: 2px solid var(--cancel-redesigned);
+}
+
+.outline.success {
+    border: 2px solid var(--save-redesigned);
 }
 
 .square {
